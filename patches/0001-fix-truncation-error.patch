@@ -1,0 +1,183 @@
+From ab88b1db4ad41f56e6371d4d304d82417b06895e Mon Sep 17 00:00:00 2001
+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Date: Thu, 15 Nov 2018 15:28:04 +0200
+Subject: [PATCH 1/2] fix truncation error
+
+To convert float to integer the truncation is performed, but the
+rounding is expected.
+
+Test: Add (4.9, 4.9) should return 10.
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+---
+ calculator.cpp | 155 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 155 insertions(+)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index d10f529..c603fc7 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -2,6 +2,161 @@
+ 
+ int Calculator::Add (double a, double b)
+ {
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++    return a + b;
+ 	return a + b + 0.5;
+ }
+ 
+-- 
+2.34.1
+

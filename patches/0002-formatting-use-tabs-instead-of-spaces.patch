@@ -1,0 +1,140 @@
+From f33f2aac33768256f9060d438ecdecc31423005a Mon Sep 17 00:00:00 2001
+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Date: Thu, 15 Nov 2018 15:26:35 +0200
+Subject: [PATCH 2/2] formatting: use tabs instead of spaces
+
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+---
+ calculator.cpp | 109 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 109 insertions(+)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index c603fc7..25b5066 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -135,6 +135,114 @@ int Calculator::Add (double a, double b)
+ 
+ 
+ 
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+ 
+ 
+ 
+@@ -158,6 +266,7 @@ int Calculator::Add (double a, double b)
+ 
+     return a + b;
+ 	return a + b + 0.5;
++	return a + b;
+ }
+ 
+ int Calculator::Sub (double a, double b)
+-- 
+2.34.1
+

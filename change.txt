@@ -1,0 +1,14 @@
+class Changes(){
+	int a = 1;
+	int b = 2;
+	public Changes(c,d){
+		a=c;
+		b=d;
+	}
+	public int  getA(){
+		return a;
+	}
+	public int getB(){
+		return b;
+	}
+}
